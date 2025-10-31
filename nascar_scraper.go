@@ -1,4 +1,4 @@
-package main
+package nascar_scraper
 
 import (
 	"encoding/json"
@@ -99,10 +99,11 @@ func to_json(x []tableData, start int, end int) {
 	}
 	filename := fmt.Sprintf("nascar%d_%d.json", start, end)
 	os.WriteFile(filename, content, 0644)
+	//fmt.Println(raceData)
 
 }
 
-func Get_race_data(start_season int, end_season int) {
+func GetRaceData(start_season int, end_season int) {
 	df := race_stats(start_season, end_season)
 	to_json(df, start_season, end_season)
 }
