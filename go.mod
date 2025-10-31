@@ -1,4 +1,4 @@
-module nascar/nascar_scraper
+module nascar_scraper
 
 go 1.19
 
