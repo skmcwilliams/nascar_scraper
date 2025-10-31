@@ -32,7 +32,7 @@ type tableData struct {
 	Rating string
 }
 
-func race_stats(start, end int) []tableData {
+func race_stats(start int, end int) []tableData {
 
 	var raceData []tableData
 	//var seasonData []tableData
@@ -99,14 +99,10 @@ func to_json(x []tableData, start int, end int) {
 	}
 	filename := fmt.Sprintf("nascar%d_%d.json", start, end)
 	os.WriteFile(filename, content, 0644)
-	//fmt.Println(raceData)
 
 }
 
-func main() {
-	var s int = 2013
-	var e int = 2021
-	df := race_stats(s, e)
-	to_json(df, s, e)
-
+func Get_race_data(start_season int, end_season int) {
+	df := race_stats(start_season, end_season)
+	to_json(df, start_season, end_season)
 }
