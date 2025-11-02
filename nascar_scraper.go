@@ -76,11 +76,11 @@ func race_stats(start int, end int) []tableData {
 		})
 
 		c.OnResponse(func(r *colly.Response) {
-			fmt.Println("Status: ", r.StatusCode)
+			//fmt.Println("Status: ", r.StatusCode)
 		})
 
 		c.OnRequest(func(r *colly.Request) {
-			fmt.Println("Visiting", r.URL)
+			//fmt.Println("Visiting", r.URL)
 		})
 
 		startURL := fmt.Sprintf("https://www.driveraverages.com/nascar/year.php?yr_id=%d", season)
