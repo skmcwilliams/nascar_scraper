@@ -26,11 +26,7 @@ long_line_behaviour=1
 long_line_column=72
 
 [files]
-current_page=3
-FILE_NAME_0=22;Go;0;EUTF-8;1;1;0;%2Fhome%2Fsteven%2FDocuments%2FCode%2Fnascar_scraper%2Fmain.go;0;4
-FILE_NAME_1=0;Go;0;EUTF-8;1;1;0;%2Fhome%2Fsteven%2FDocuments%2FCode%2Fnascar_scraper%2Fnascar_scraper.go;0;4
-FILE_NAME_2=220;Go;0;EUTF-8;1;1;0;%2Fhome%2Fsteven%2FDocuments%2FCode%2Fnascar_scraper%2Fnascar_scraper_test.go;0;4
-FILE_NAME_3=54;None;0;EUTF-8;1;1;0;%2Fhome%2Fsteven%2FDocuments%2FCode%2Fnascar_scraper%2Fgo.mod;0;4
+current_page=-1
 
 [VTE]
 last_dir=/home/steven
